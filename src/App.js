@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './svg/Logo'
+import Header from './components/Header'
+import BottomNav from './components/BottomNav';
+import Contents from './components/Contents';
+import { useState } from 'react';
 
 function App() {
+  let [inWidth,setWidth] = useState(window.innerWidth)
+
+  let handleResize = () => {
+    setWidth(window.innerWidth)
+  }
+
+  window.addEventListener('resize',handleResize)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Contents />
+      {inWidth > 700 ? <></> : <BottomNav />}
     </div>
   );
 }
