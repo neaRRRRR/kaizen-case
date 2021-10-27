@@ -6,7 +6,7 @@ import Portal from '../svg/Portal'
 import Plus from '../svg/Plus'
 export default () => {
     return (
-    <div style={{width:'100%',height:'260px'}}>
+    
         <div className='nav-container'>
             <div style={{display:'flex',flexDirection:'column',alignItems:'center',width:'80px'}}>
                 <Kesfet />
@@ -22,6 +22,6 @@ export default () => {
                 <div style={{marginTop:'5px'}}>DAHA CÜZDAN</div>
             </div>
         </div>
-    </div>
+    
     )
 }

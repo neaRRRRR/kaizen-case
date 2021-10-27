@@ -1,4 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/a9ba87e28be39ce9b7efe3318d842d8e?family=TCCC-UnityHeadline);
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -10,4 +12,11 @@
   body {
     
   }
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  
+  
 }

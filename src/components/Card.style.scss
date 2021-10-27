@@ -1,0 +1,98 @@
+.card-outer{
+    height: 378px;
+    width: 100%;
+    background-image: url("https://lun-eu.icons8.com/a/Ch3B7tlhIUOKQN6wW7MWJQ/p8mjmN1GXkCvJrQe14-hFA/Rectangle%20Copy.svg");
+    background-repeat: no-repeat;
+}
+
+.card-inner{
+    
+    
+    
+//     height: 360px;
+//     width: 100%;
+//     background-image: url("https://lun-eu-assets.s3.eu-central-003.backblazeb2.com/Ch3B7tlhIUOKQN6wW7MWJQ/Kqm5h3csK0mtlNfmvUAN5Q/Rectangle.svg");
+//     background-repeat: no-repeat;
+        height: 350px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+}
+
+.photo-container{
+    
+    height: 247px;
+    width: 100%;
+    background: url("https://lun-eu.icons8.com/a/Ch3B7tlhIUOKQN6wW7MWJQ/AT1d8vpdukagrV_YUebGWg/IMG_8506.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius:  20px 20px 20px 130px;
+    
+
+    
+    
+}
+
+
+.photo-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: red;
+    border: 4px solid #fff;
+    // position: absolute;
+    // left: 0;
+    // bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.date{
+    
+    display: flex;
+    width: 97px;
+    height: 32px;
+    border-radius: 26px;
+    background-color: #1D1E1C;
+    border: 1px solid #1D1E1C;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    font-family: 'TCCC-UnityHeadline';
+    font-size: 12px;
+}
+
+.photo-content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    align-self:center;
+
+}
+
+.text-container{
+
+    display: flex;
+    height: 80px;
+    width: 75%;
+    min-width:auto;
+   text-align: center;
+    align-self: center;
+    padding-top: 15px;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'TCCC-UnityHeadline';;
+    font-size: 14px;
+
+}

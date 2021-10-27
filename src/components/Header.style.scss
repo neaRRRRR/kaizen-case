@@ -3,15 +3,16 @@
 
 .header-container{
 
-    height: 50px;
-    width: 90%;
+    height: 70px;
+    width: 95%;
     min-width:auto;
-    position: fixed;
-    left: 5%;
+   
+    align-self: center;
+    
     top:5%;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: flex-end; 
     
 }
 
