@@ -1,8 +1,23 @@
+.card-out-cont{
+    display: flex;
+    width:305px;
+    padding-bottom:15px;
+    margin-left: 19px;
+    
+    
+    
+}
+
+
+
 .card-outer{
+    display: flex;
     height: 378px;
-    width: 100%;
+    width: 305px;
     background-image: url("https://lun-eu.icons8.com/a/Ch3B7tlhIUOKQN6wW7MWJQ/p8mjmN1GXkCvJrQe14-hFA/Rectangle%20Copy.svg");
     background-repeat: no-repeat;
+    
+
 }
 
 .card-inner{
@@ -86,7 +101,7 @@
     display: flex;
     height: 80px;
     width: 75%;
-    min-width:auto;
+    
    text-align: center;
     align-self: center;
     padding-top: 15px;
@@ -94,5 +109,6 @@
     flex-direction: column;
     font-family: 'TCCC-UnityHeadline';;
     font-size: 14px;
-
+    line-height: 20px;
+    
 }

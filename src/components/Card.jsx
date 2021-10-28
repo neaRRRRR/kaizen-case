@@ -1,13 +1,16 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import './Card.style.scss'
 import RectInnerBg from '../svg/RectInnerBg'
 import RectBg from '../svg/RectBg'
 import Knurl from '../svg/Knurl'
 import Cola from '../svg/Cola'
+import { useHistory, withRouter } from 'react-router-dom'
 
-export default () => {
+export default (props,{text}) => {
+    const history = useHistory()
+
     return (
-        <div style={{width:'305px',paddingBottom:'15px'}}>
+        <div className='card-out-cont' onClick={() => {console.log(props.text);history.push('/detail',props)}}>
         <div className='card-outer'>
             <div className='card-inner'>
                 
@@ -26,8 +29,8 @@ export default () => {
                     </div>
                 </div>
                 <div className='text-container'>
-                    <p style={{color:'#1D1E1C',fontWeight:'bold'}}>2,5 LT Coca-Cola kapakları
-                        Coca-Cola +Coffee kazandırıyor!
+                    <p style={{color:'#1D1E1C',fontWeight:'bold', whiteSpace:'normal'}}>
+                    {props.text}
                     </p>
                     <p style={{color:'red',fontWeight:'bold'}}>Daha Daha</p>
                 </div>

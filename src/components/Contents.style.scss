@@ -25,10 +25,49 @@
 .card-container{
     display: flex;
     height: 400px;
+    align-items: center;
+    overflow: scroll;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+    
+   
+}
+
+
+
+.dots-container{
+    bottom: 0;
+    left: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 10px;
     
 }
+
+.dots-active{
+    width: 19px;
+    height: 9px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: red;
+    border: none;
+}
+
+.dots{
+    width: 9px;
+    height: 9px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    cursor: pointer;
+    border: none;
+}
+
+
 
 
 
