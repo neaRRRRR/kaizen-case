@@ -8,11 +8,14 @@ import * as Scroll from 'react-scroll';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useHistory, withRouter } from 'react-router-dom'
+import axios from 'axios'
 
 export default () => {
+  
+    let [data,setData] = useState([])
     
     
-    const carouselItems = [<Card text={'AAAAAAAAA'}/>, <Card text={'BBBBBBB'}/>, <Card text={'CCCCCCC'}/>];
+    const carouselItems = [];
 
     // let carouselItems = data.map((item) => {
     //     return <Card text={item.text} ... />
@@ -59,6 +62,11 @@ export default () => {
         );
       };
    
+      useEffect(() => {
+        axios.get('https://testapi.dahadaha.com/api/promotions').then((res) =>{
+              setData(res.data)
+        })
+      },[])
     
 
     return(
@@ -85,7 +93,11 @@ export default () => {
             containerClass="card-container"
             customDot={<CustomDot/>}
             >
-                {carouselItems}
+                {data.map((item) => {
+                  return(
+                    <Card data={item}/>
+                  )
+                })}
             </Carousel>
             
             

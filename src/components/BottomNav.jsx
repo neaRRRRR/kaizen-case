@@ -19,7 +19,7 @@ export default () => {
             
             <div style={{display:'flex',flexDirection:'column',alignItems:'center',}}>
                 <Star />
-                <div style={{marginTop:'5px'}}>DAHA CÜZDAN</div>
+                <div style={{marginTop:'5px',color:'#979797'}}>DAHA CÜZDAN</div>
             </div>
         </div>
     
