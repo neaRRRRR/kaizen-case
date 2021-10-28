@@ -38,7 +38,7 @@ export default (props) => {
                 <div className='detail-p'>
                 {item.Description}   
                 </div>
-                <div className='detail-b'>Hemen Katıl</div>
+                <a href={item.DetailUrl} className='detail-b' >Hemen Katıl</a>
             </div>
         </div>
     )

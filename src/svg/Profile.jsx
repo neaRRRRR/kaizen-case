@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Profile = (props) => (
+const Profile = (props,) => (
   <svg
     width="16px"
     height="17px"

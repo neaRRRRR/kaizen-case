@@ -13,14 +13,14 @@ import axios from 'axios'
 export default () => {
   
     let [data,setData] = useState([])
-    
+    let [tags,setTags] = useState('all')
     
     const carouselItems = [];
 
-    // let carouselItems = data.map((item) => {
-    //     return <Card text={item.text} ... />
-    // })
-
+    useEffect(() => {
+      console.log(tags)
+    },[tags])
+   
     
     
     const responsive = {
@@ -53,31 +53,34 @@ export default () => {
         
         
         return (
+          
           <button
             className={active ? "dots-active" : "dots"}
             onClick={(e) => {onClick();console.log(e)}}
           >
             {React.Children.toArray(carouselItems)[index]}
           </button>
+          
         );
       };
    
       useEffect(() => {
         axios.get('https://testapi.dahadaha.com/api/promotions').then((res) =>{
               setData(res.data)
+              
         })
       },[])
+
+      const getData = (data) => {
+        setTags(data)
+      }
     
 
     return(
     
         <div className='content-container'>
             <div className='tag-container'>
-                <Tags />
-                <Tags />
-                <Tags />
-                <Tags />
-                <Tags />
+                <Tags tag={data} state={getData}/>
             </div>
             
             <Carousel 
@@ -94,9 +97,12 @@ export default () => {
             customDot={<CustomDot/>}
             >
                 {data.map((item) => {
-                  return(
-                    <Card data={item}/>
-                  )
+                  if(item.BrandTags[0]?.BrandName == tags || item.BrandTags[1]?.BrandName == tags){
+                    return <Card data={item}/>
+                  }
+                  if(tags == 'all'){
+                    return <Card data={item}/>
+                  }
                 })}
             </Carousel>
             

@@ -40,6 +40,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+
+.profile-container{
+  display: flex;
+  height: 40px;
+  width: 40px;
+  justify-content: flex-end;
+}
+
+.online{
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  
   
 
 }
