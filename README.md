@@ -2,10 +2,12 @@
 # React project
 
 
-
 ## Run Locally
 
-Clone the project
+First you need install Node engine (https://nodejs.org/en/).
+If you already installed
+
+Clone the project, 
 
 ```bash
   git clone https://github.com/neaRRRRR/kaizen-case
