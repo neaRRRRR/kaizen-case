@@ -37,14 +37,14 @@ Start the server
 
 
 
-## Appendix
-
-When you open the application, you can open the responsive setting from inspect with a right click. Recommended setting (iPhone 6-7-8)
-
-![](https://cdn.discordapp.com/attachments/872606948372131861/903583745808937000/inspect.gif)
-
 
 ## Demo
 
 ![](https://cdn.discordapp.com/attachments/872606948372131861/903581942719578192/demo.gif)
 
+
+## Appendix
+
+When you open the application, you can open the responsive setting from inspect with a right click. Recommended setting (iPhone 6-7-8)
+
+![](https://cdn.discordapp.com/attachments/872606948372131861/903583745808937000/inspect.gif)
