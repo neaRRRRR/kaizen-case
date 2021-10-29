@@ -32,7 +32,7 @@ Start the server
 
 ## Tech Stack
 
-**Client:** React, Sass
+**Client:** React (https://reactjs.org/), Sass (https://sass-lang.com/)
 
 
 
