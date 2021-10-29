@@ -40,7 +40,7 @@ Start the server
 
 ## Demo
 
-![](https://cdn.discordapp.com/attachments/872606948372131861/903581942719578192/demo.gif)
+![](https://cdn.discordapp.com/attachments/872606948372131861/903586787916677140/demo2.gif)
 
 
 ## Appendix
