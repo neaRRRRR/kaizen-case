@@ -2,10 +2,12 @@
 # React project
 
 
-
 ## Run Locally
 
-Clone the project
+First you need install Node engine (https://nodejs.org/en/).
+If you already installed
+
+Clone the project, 
 
 ```bash
   git clone https://github.com/neaRRRRR/kaizen-case
@@ -32,9 +34,15 @@ Start the server
 
 ## Tech Stack
 
-**Client:** React, Sass
+**Client:** React (https://reactjs.org/), Sass (https://sass-lang.com/)
 
 
+
+
+
+## Demo
+
+![](https://cdn.discordapp.com/attachments/872606948372131861/903586787916677140/demo2.gif)
 
 
 ## Appendix
@@ -42,9 +50,3 @@ Start the server
 When you open the application, you can open the responsive setting from inspect with a right click. Recommended setting (iPhone 6-7-8)
 
 ![](https://cdn.discordapp.com/attachments/872606948372131861/903583745808937000/inspect.gif)
-
-
-## Demo
-
-![](https://cdn.discordapp.com/attachments/872606948372131861/903581942719578192/demo.gif)
-
