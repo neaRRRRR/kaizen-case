@@ -80,7 +80,7 @@ export default () => {
     
         <div className='content-container'>
             <div className='tag-container'>
-                <Tags tag={data} state={getData}/>
+                <Tags tag={data} state={getData} selected={tags}/>
             </div>
             
             <Carousel 

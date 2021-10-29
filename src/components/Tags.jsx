@@ -1,8 +1,9 @@
 import React from 'react'
 import './Tags.style.scss'
 import Search from '../svg/Search'
-export default ({state},props) => {
+export default ({state,selected},props) => {
     
+
     let brands = [
         {
             brandName:"Fuse Tea",
@@ -33,7 +34,7 @@ export default ({state},props) => {
         </div>
         {brands.map((data) => {
             return(
-                <div className='tags' onClick={() => {state(data.brandName)}}>
+                <div className='tags' style={selected == data.brandName ? {border: '1px solid #F40000'} : {}} onClick={() => {state(data.brandName)}}>
         <div style={{width:'10px'}}></div>
             <img src={data.brandLogo} width="24" height="24"/>
             <div style={{width:'5px'}}></div>
